@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# xvitop — Intel XPU (Arc) GPU monitor, nvitop-style.
+# Usage: xvitop [--once | --json | --watch SECS | --vllm URL|off | --refresh N]
+exec python3 "$(dirname "$(readlink -f "$0")")/xvitop.py" "$@"
